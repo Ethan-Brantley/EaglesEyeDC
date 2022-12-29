@@ -1,0 +1,201 @@
+/*
+ *
+ * Site-wide stylesheet for Eagles Eye Drone Company
+ *
+ * All rules are written mobile-first. For styling specific to larger screens and devices,
+ * go to the sections "Desktop Styling" or "Tablet Styling"
+ *
+ * Created by Atlas Web Design. 
+ *
+ */
+
+html, body {
+
+    background-color: rgb(29, 113, 185);
+    color: #FFF;
+    font-size: 20px;
+
+}
+
+/*
+ *
+ * Header Styling
+ *
+ */
+
+header {
+
+    width: 100%;
+
+}
+
+#logo {
+
+    width: 125px;
+
+}
+
+/*
+ *
+ * Navigation
+ *
+ */
+
+.overlay-content {
+
+    background-color: rgb(29, 113, 185);
+    width: 0vw;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    overflow: hidden;
+    transition: width 0.3s;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.overlay-content a {
+
+    display: block;
+    padding: 45px;
+
+}
+
+#desktop-nav {
+
+    display: none;
+
+}
+
+.openBtn {
+
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    padding: 10px;
+
+}
+
+.closeBtn {
+
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 50px;
+
+}
+
+
+/*
+ *
+ * Icon Styling
+ *
+ */
+
+.fa {
+
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+/*
+ *
+ * Footer Styling
+ *
+ */
+
+footer {
+
+    position: absolute;
+    background-color: #000;
+    color: #FFF;
+    width: 100%;
+    min-height: 100px;
+    bottom: 0px;
+    padding: 50px;
+
+}
+
+#footer-text {
+
+    text-align: center;
+
+}
+
+
+
+/*
+ *
+ * Desktop Styling
+ *
+ */
+
+@media only screen and (min-width: 1224px){
+
+    /*
+     * Desktop Icons
+     */
+    
+    .fa {
+
+        font-size: 20px;
+
+    }
+
+    /*
+     * Header Styling
+     */
+
+    #logo {
+        width: 150px;
+    }
+
+    /*
+     * Navigation
+     */
+
+    .openBtn {
+
+        display: none;
+
+    }
+
+    #desktop-nav {
+
+        display: block;
+        max-height: 600px;
+        width: 50%;
+        position: absolute;
+        right: 0%;
+        top: 2%;
+        padding: 50px;
+
+    }
+
+    #desktop-nav a {
+
+        padding: 50px;
+
+    }
+
+ }
+
+/*
+ *
+ * Tablet Styling
+ *
+ */
+
+@media only screen and (min-width: 480px){
+
+
+}
