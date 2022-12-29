@@ -1,6 +1,6 @@
 /*
  *
- * Site-wide stylesheet for Eagles Eye Drone Company
+ * Site-wide stylesheet for Eagle's Eye Drone Company
  *
  * All rules are written mobile-first. For styling specific to larger screens and devices,
  * go to the sections "Desktop Styling" or "Tablet Styling"
@@ -11,7 +11,6 @@
 
 html, body {
 
-    background-color: rgb(29, 113, 185);
     color: #FFF;
     font-size: 20px;
     width: 100%;
@@ -43,11 +42,45 @@ header {
 
 }
 
+#hero {
+
+position: absolute;
+top: 0%;
+z-index: -1;
+
+}
+
+#hero-bg {
+
+    height: 100vh;
+
+}
+
+#hero-txt {
+
+    display: block;
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+
+}
+
 /*
  *
  * Navigation
  *
  */
+
+nav {
+
+    background-color: rgb(29, 113, 185);
+    height: 125px;
+    width: 100vw;
+    position: fixed;
+
+}
 
 .overlay-content {
 
@@ -69,8 +102,14 @@ header {
 
 .overlay-content a {
 
+    text-decoration: none;
+    color: white;
     display: block;
-    padding: 45px;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -100,6 +139,12 @@ header {
 
 }
 
+.active-link {
+
+    border-bottom: 3px solid rgb(254, 189, 89)
+
+}
+
 /*
  *
  * General Content Styling
@@ -107,6 +152,8 @@ header {
  */
 
 content {
+
+    background-color: rgb(29, 113, 185);
 
 }
 
@@ -176,10 +223,24 @@ footer {
         width: 150px;
     }
 
+    #hero-txt {
+
+        font-size: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -50%);
+
+    }
+
     /*
      * Navigation
      */
+    
+    nav {
 
+        height: 150px;
+    
+    }
     .openBtn {
 
         display: none;
@@ -189,18 +250,27 @@ footer {
     #desktop-nav {
 
         display: block;
-        max-height: 600px;
-        width: 50%;
-        position: absolute;
+        width: 60%;
+        position: fixed;
         right: 0%;
-        top: 2%;
-        padding: 50px;
+        top: 0%;
+        transform: translate(0%, 200%);
 
     }
 
     #desktop-nav a {
 
-        padding: 50px;
+        padding: 10px;
+        margin: 40px;
+        color: white;
+        text-decoration: none;
+
+    }
+
+    #desktop-nav a:hover {
+
+        border-bottom: 4px solid rgb(254, 189, 89);
+        transition: all 0.2s;
 
     }
 
