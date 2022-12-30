@@ -55,6 +55,7 @@ z-index: -1;
     background-image: url(../images/videos/Hero.PNG);
     background-size: cover;
     object-fit: cover;
+    object-position: center;
     height: 100vh;
     width: 100vw;
 
