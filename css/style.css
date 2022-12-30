@@ -232,7 +232,7 @@ footer {
         font-size: 40px;
         top: 50%;
         left: 50%;
-        transform: translate(-100%, -50%);
+        transform: translate(-50%, -50%);
 
     }
 
