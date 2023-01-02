@@ -19,9 +19,16 @@ html, body {
 
 }
 
+#page-container {
+
+    min-height: 100vh;
+    position: relative;
+
+}
+
 .wrapper {
 
-    height: 95%;
+    padding-bottom: 200px;
 
 }
 
@@ -162,12 +169,14 @@ nav {
 content {
 
     background-color: rgb(29, 113, 185);
+    display: block;
+    padding-top: 150px;
 
 }
 
 #contact-form {
 
-    padding: 200px 50px 50px 50px;
+    padding: 50px 50px 550px 50px;
 
 }
 
@@ -194,11 +203,12 @@ content {
 
 footer {
 
+    position: absolute;
     background-color: #000;
     color: #FFF;
     width: 100%;
-    min-height: 100px;
-    bottom: 0px;
+    height: 200px;
+    bottom: 0;
     padding: 50px;
 
 }
