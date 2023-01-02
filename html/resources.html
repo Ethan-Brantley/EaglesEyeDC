@@ -27,6 +27,7 @@
     </script>
 </head>
 <body>
+    <div id="page-container">
     <header>
         <nav>
             <a href="../index.html"><img src="../images/EaglesEyeDC_Logo.jpeg" id="logo"></a>
@@ -57,18 +58,37 @@
         </div>-->
     </header>
 
-    <div class="wrapper">
-        <content>
+        <content style="padding-top:150px;">
             <section>
                 <h1>FAQ</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, officia! Natus voluptate nobis quia ratione in quam ipsam eveniet, at porro dolor blanditiis magni! Quibusdam fuga reprehenderit dolorum ipsam perferendis?</p>
+                <button type="button" class="collapsible">Example Question</button>
+                <div class="collapsed-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore possimus hic excepturi amet, expedita illo assumenda, ex, modi voluptates aliquid voluptatem asperiores deserunt fugiat earum itaque qui porro officiis!
+                </div>
+                <button type="button" class="collapsible">Example Question</button>
+                <div class="collapsed-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore possimus hic excepturi amet, expedita illo assumenda, ex, modi voluptates aliquid voluptatem asperiores deserunt fugiat earum itaque qui porro officiis!
+                </div>
+                <button type="button" class="collapsible">Example Question</button>
+                <div class="collapsed-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore possimus hic excepturi amet, expedita illo assumenda, ex, modi voluptates aliquid voluptatem asperiores deserunt fugiat earum itaque qui porro officiis!
+                </div>
+                <button type="button" class="collapsible">Example Question</button>
+                <div class="collapsed-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore possimus hic excepturi amet, expedita illo assumenda, ex, modi voluptates aliquid voluptatem asperiores deserunt fugiat earum itaque qui porro officiis!
+                </div>
             </section>
             <section>
                 <h1>Resources</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit est eos id sint necessitatibus expedita aliquam odio minima? Animi alias inventore aliquid. Similique tempora at enim quidem est. Error, assumenda.</p>
+                <ul>
+                    <li>Resource link</li>
+                    <li>Resource link</li>
+                    <li>Resource link</li>
+                </ul>
             </section>
         </content>
-    </div>
 
     <!-- Footer -->
     <footer>
@@ -81,7 +101,24 @@
             <p>Copyright Disclaimer</p>
         </div>
     </footer>
+    </div> 
 
     <script type="text/javascript" src="../js/navigation.js"></script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
 </body>
 </html>

@@ -72,10 +72,47 @@ header {
 
     position: absolute;
     font-size: 40px;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+}
+
+header video {
+
+    display: none;
+
+}
+
+.poster {
+
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/pexels-marcin-jozwiak-3109819.jpg");
+    background-size: cover;
+    background-position: 65%;
+    background-attachment: fixed;
+
+}
+
+.action-btn {
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(254, 189, 89);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.action-btn a {
+
+    color: black;
+    text-decoration: none;
 
 }
 
@@ -168,14 +205,63 @@ content {
 
     background-color: rgb(29, 113, 185);
     display: block;
-    padding-top: 150px;
+    padding-top: 50px;
     padding-bottom:250px;
+
+}
+
+section h1 {
+
+    text-align: center;
+
+}
+
+section p {
+
+    padding: 10px 40px;
+    text-indent: 1.5em;
+
+}
+
+section ul {
+
+    padding: 0px 100px;
 
 }
 
 #contact-form {
 
-    padding: 50px 50px 550px 50px;
+    padding: 50px 50px 150px 50px;
+
+}
+
+.section-img {
+
+    clip-path: ellipse(95% 100% at 53% 0%);
+    background-size: cover;
+    background-position: 60%;
+    height: 60vh;
+
+}
+
+.collapsible {
+
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(20, 82, 136);
+    border: none;   
+    outline: none;
+    padding: 10px;
+
+}
+
+.collapsed-content {
+
+    padding: 10px 25px;
+    display: none;
+    overflow: hidden;
+    background-color:rgb(65, 143, 212);
 
 }
 
@@ -191,6 +277,13 @@ content {
     font-size: 20px;
     margin: 5px;
     padding: 5px;
+
+}
+
+.icon {
+
+    margin: auto;
+    padding: 25px;
 
 }
 
@@ -294,6 +387,30 @@ footer {
 
         border-bottom: 4px solid rgb(254, 189, 89);
         transition: all 0.2s;
+
+    }
+
+    header video {
+
+        display: block;
+
+    }
+
+    .poster {
+
+        display: none;
+
+    }
+
+    .action-btn {
+
+        top: 80%;
+
+    }
+
+    .collapsible {
+
+        text-align: left;
 
     }
 
