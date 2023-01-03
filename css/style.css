@@ -235,12 +235,41 @@ section ul {
 
 }
 
-.section-img {
+.swoop-up {
 
     clip-path: ellipse(95% 100% at 53% 0%);
     background-size: cover;
     background-position: 60%;
     height: 60vh;
+
+}
+
+.swiper {
+
+    height: 80vh;
+    z-index: 0;
+    padding: 50px;
+
+}
+
+.swiper-slide {
+
+    box-shadow: 5px 5px 15px 5px black;
+    background-color: #FFF;
+
+}
+
+.swiper-slide h1 {
+
+    color: #000;
+    text-align: center;
+    padding: 25px;
+
+}
+
+.swiper-pagination-bullet {
+
+    background-color: rgb(254, 189, 89);
 
 }
 
@@ -279,6 +308,7 @@ section ul {
     padding: 5px;
 
 }
+
 
 .icon {
 

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/EaglesEyeDC_Logo.jpeg">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -59,7 +61,23 @@
     </header>
 
         <content style="padding-top:150px;">
-
+            <div class=swiper>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h1>Service 1</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Service 2</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Service 3</h1>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+        
+                <div class="swiper-button-prev"><i class="fa fa-chevron-left"></i></div>
+                <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div>
+            </div>
         </content>
 
     <!-- Footer -->
@@ -75,6 +93,39 @@
     </footer>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="../js/navigation.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+        // Optional parameters
+        spaceBetween: 30,
+        centeredSlides: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+          },
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
 </body>
 </html>
