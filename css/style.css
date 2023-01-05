@@ -140,7 +140,7 @@ nav {
     background-color: rgb(29, 113, 185);
     height: 125px;
     width: 100vw;
-    position: fixed;
+    position: absolute;
     z-index: 1;
 
 }
