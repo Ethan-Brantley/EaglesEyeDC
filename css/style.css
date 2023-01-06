@@ -13,7 +13,7 @@ html, body {
 
     background-color: rgb(29, 113, 185);
     color: #FFF;
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
     height: 100%;
 
@@ -400,6 +400,12 @@ footer {
  */
 
 @media only screen and (min-width: 1224px){
+
+    html {
+
+        font-size: 20px;
+
+    }
 
     /*
      * Desktop Icons
